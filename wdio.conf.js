@@ -1,4 +1,5 @@
 import path from 'path'
+
 export const config = {
     //
     // ====================
@@ -114,18 +115,17 @@ export const config = {
     // commands. Instead, they hook themselves up into the test process.
     services: [
         [
-        'appium',
-        {
-            args:{
-                address: '127.0.0.1',
-                port: 4723
-            },
-            logPath : './log',
-            command : 'appium'
-        }
-    ]
-],
-
+            'appium',
+            {
+                args:{
+                    address: '127.0.0.1',
+                    port: 4723
+                },
+                logPath : './log',
+                command : 'appium'
+            }
+        ]
+    ],
     // Framework you want to run your specs with.
     // The following are supported: Mocha, Jasmine, and Cucumber
     // see also: https://webdriver.io/docs/frameworks
