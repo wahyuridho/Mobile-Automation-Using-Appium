@@ -4,11 +4,12 @@ import HomePage from '../page/home.page.js'
 
 describe('Positif Flow', () => {
     it('User Successfully Go to Homepage', async () => {
-        await WelcomePage.fillForm("Hahaa", "54", "290", "Male")
+        await WelcomePage.fillForm("Rudy", "88", "180", "Male")
         await WelcomePage.submit()
-        await FormPage.selectOption("dua")
+        await FormPage.selectOption("tiga")
         await FormPage.submit()
 
         await expect(HomePage.headerName).toBeDisplayed();
+        await expect(HomePage.headerDesc).toBeDisplayed();
     })
 })
