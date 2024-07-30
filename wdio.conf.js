@@ -58,7 +58,7 @@ export const config = {
         'appium:deviceName': 'emulator-5554',
         'appium:platformVersion': '14.0',
         'appium:automationName': 'UiAutomator2',
-        // 'appium:app': path.join(process.cwd(), './apk/Diet_/meal.apk'),
+        'appium:app': path.join(process.cwd(), './apk/Diet_/meal.apk'),
         'appium:appPackage': 'com.fghilmany.dietmealapp',
         'appium:appActivity': 'com.fghilmany.dietmealapp.ui.main.MainActivity',
         'appium:noReset': true,
