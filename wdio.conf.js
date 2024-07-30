@@ -1,5 +1,5 @@
-const path = require('path')
-exports.config = {
+import path from 'path'
+export const config = {
     //
     // ====================
     // Runner Configuration
